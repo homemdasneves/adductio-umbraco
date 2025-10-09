@@ -4,6 +4,9 @@
 
 @{
   var blockList = Model.Value<IEnumerable<BlockListItem>>("homeCarousel");
+  var rotationTime = Model.Value<int>("carouselRotationTime");
+  // Default to 5 seconds if not specified
+  var rotationTimeMs = rotationTime > 0 ? rotationTime * 1000 : 5000;
   
   if (blockList != null)
   {
@@ -49,7 +52,15 @@
     </section>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        var splide = new Splide('.splide');
+        var splide = new Splide('.splide', {
+          type: 'loop',
+          autoplay: true,
+          interval: @rotationTimeMs,
+          pauseOnHover: true,
+          pauseOnFocus: true,
+          arrows: true,
+          pagination: true
+        });
         splide.mount();
       });
     </script>

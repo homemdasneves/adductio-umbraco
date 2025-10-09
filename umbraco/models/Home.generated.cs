@@ -50,6 +50,13 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		// properties
 
 		///<summary>
+		/// Carousel Rotation Time (seconds): Time in seconds between slide rotations. Default is 5 seconds if not specified.
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[ImplementPropertyType("carouselRotationTime")]
+		public virtual int CarouselRotationTime => this.Value<int>(_publishedValueFallback, "carouselRotationTime");
+
+		///<summary>
 		/// Clients List
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
