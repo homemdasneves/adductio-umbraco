@@ -47,7 +47,7 @@
 				<img src="@imageUrl" alt="Adductio" />
 			}
 		</div>
-		<div class="text-adductioBlue mt-10">@Model.Value("serviceText")</div>
+		<div class="text-adductioBlue mt-10 rich-text-content">@Html.Raw(Model.Value("serviceText"))</div>
 		@if (service.Link != null && service.Link.Any())
 		{
 			@foreach (var link in service.Link)
