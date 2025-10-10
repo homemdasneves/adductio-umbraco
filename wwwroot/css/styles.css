@@ -798,6 +798,10 @@ video {
   aspect-ratio: 16 / 9;
 }
 
+.h-1{
+  height: 0.25rem;
+}
+
 .h-32{
   height: 8rem;
 }
@@ -836,6 +840,10 @@ video {
 
 .w-7{
   width: 1.75rem;
+}
+
+.w-\[10\%\]{
+  width: 10%;
 }
 
 .w-\[20px\]{

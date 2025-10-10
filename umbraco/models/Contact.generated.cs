@@ -27,11 +27,6 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		global::Umbraco.Cms.Core.Strings.IHtmlEncodedString ContactAddress { get; }
 
-		/// <summary>ContactEmail</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		string ContactEmail { get; }
-
 		/// <summary>Form</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		global::System.Nullable<global::System.Guid> ContactForm { get; }
@@ -40,6 +35,11 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		string ContactFormTitle { get; }
+
+		/// <summary>ContactText</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		global::Umbraco.Cms.Core.Strings.IHtmlEncodedString ContactText { get; }
 
 		/// <summary>Active</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -96,19 +96,6 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public static global::Umbraco.Cms.Core.Strings.IHtmlEncodedString GetContactAddress(IContact that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(publishedValueFallback, "contactAddress");
 
 		///<summary>
-		/// ContactEmail
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("contactEmail")]
-		public virtual string ContactEmail => GetContactEmail(this, _publishedValueFallback);
-
-		/// <summary>Static getter for ContactEmail</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static string GetContactEmail(IContact that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "contactEmail");
-
-		///<summary>
 		/// Form
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -131,6 +118,19 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		public static string GetContactFormTitle(IContact that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "contactFormTitle");
+
+		///<summary>
+		/// ContactText
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("contactText")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString ContactText => GetContactText(this, _publishedValueFallback);
+
+		/// <summary>Static getter for ContactText</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static global::Umbraco.Cms.Core.Strings.IHtmlEncodedString GetContactText(IContact that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(publishedValueFallback, "contactText");
 
 		///<summary>
 		/// Active
