@@ -23,6 +23,10 @@
     <Folder Include="App_Code\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include=".github\workflows\develop_adductio-site-dev.yml" />
+  </ItemGroup>
+
   <PropertyGroup>
     <!-- Razor files are needed for the backoffice to work correctly -->
     <CopyRazorGenerateFilesToPublishDirectory>true</CopyRazorGenerateFilesToPublishDirectory>
