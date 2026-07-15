@@ -101,6 +101,7 @@ img {
     align-items: center;
     transform: translate(0, 0);
     transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
   }
   
   .main-nav {
@@ -119,5 +120,6 @@ img {
     top: 0;
     text-align: center;
     width: 100%;
+    padding-top: 0;
   }
 }
